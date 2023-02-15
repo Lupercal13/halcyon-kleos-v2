@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         shalimar: ["Shalimar", "cursive"],
+        audiowide: ["Audiowide", "cursive"],
       },
     },
   },

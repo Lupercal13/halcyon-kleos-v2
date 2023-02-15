@@ -4,26 +4,41 @@ import { ClipLoader } from "react-spinners";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 const News = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   // const fetchData =() => {
   //   setIsLoading(true)
   //   window.onload(setIsLoading(false))
   //   }
   // }
-  const fetchData = () => {
-    setIsLoading(true);
+  // const fetchData = () => {
+  //   setIsLoading(true);
 
-    window.addEventListener("load", () => {
+  //   window.addEventListener("load", () => {
+  //     setTimeout(() => {
+  //       setIsLoading(false);
+  //     }, 1000);
+  //   });
+  // };
+
+  // useEffect(() => {
+
+  //   fetchData();
+  // }, [setIsLoading]);
+
+  useEffect(() => {
+    const onPageLoad = () => {
       setTimeout(() => {
         setIsLoading(false);
       }, 1000);
-    });
-  };
+    };
 
-  useEffect(() => {
-    
-    fetchData();
+    if (document.readyState === "complete") {
+      onPageLoad();
+    } else {
+      window.addEventListener("load", onPageLoad);
+      return () => window.removeEventListener("load", onPageLoad);
+    }
   }, []);
 
   return (
@@ -31,7 +46,9 @@ const News = () => {
       <Navbar />
       <div className="w-full  h-full flex flex-col justify-center items-center pt-[7rem] ">
         <div className="h-full w-[85%] lg:max-w-[800px] bg-gradient-to-br from-pink-600/70 to-orange-600/70 flex flex-col justify-center items-center rounded-2xl pb-8 shadow-lg shadow-white/50">
-          <h1 className="text-3xl lg:text-7xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] pb-4 font-semibold">Latest News</h1>
+          <h1 className="text-3xl lg:text-7xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] pb-4 font-semibold">
+            Latest News
+          </h1>
           {isLoading ? (
             <ClipLoader color="{'#fff'}" />
           ) : (

@@ -1,10 +1,10 @@
 import React from "react";
-import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsYoutube, BsEnvelope } from "react-icons/bs";
 import {
   FaSoundcloud,
   FaTwitterSquare,
   FaMixcloud,
-  FaMix,
+
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -54,6 +54,8 @@ const Footer = () => {
       </div>
       <div className="flex flex-col gap-1 mt-4">
         <p className="text-lg">Halcyon Kleos</p>
+        <a href="mailto:halcyonkleos@gmail.com" className="flex items-center gap-2 -mt-1"><BsEnvelope size={15} /><p  className="text-sm hover:text-gray-100">halcyonkleos@gmail.com</p></a>
+        <p className="border-b border-gray-500 w-[200px]"></p>
         <p className="text-xs">&#169; {date} || all rights reserved</p>
         <p className="text-xs">
           Website by: <span className="text-gray-300">PayneDesignHaus</span>
