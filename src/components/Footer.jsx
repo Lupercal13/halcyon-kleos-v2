@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className="text-gray-400 w-full h-auto px-4 py-10">
       <div className="border-t border-gray-500 pt-2">
-        <div className="flex justify-between px-28">
+        <div className="flex justify-center gap-8 lg:gap-32">
           <a href="https://www.facebook.com/halcyonkleos1/">
             <BsFacebook
               size={20}

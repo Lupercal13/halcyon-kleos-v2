@@ -61,7 +61,7 @@ const Navbar = () => {
           }
         >
           <ul className="text-center">
-            <a href="#home">
+            <Link to='/'>
               {" "}
               <li
                 onClick={() => setNav(false)}
@@ -69,8 +69,8 @@ const Navbar = () => {
               >
                 Top
               </li>
-            </a>
-            <a href="#about">
+            </Link>
+            <Link to='/about'>
               {" "}
               <li
                 onClick={() => setNav(false)}
@@ -78,8 +78,8 @@ const Navbar = () => {
               >
                 About
               </li>
-            </a>
-            <a href="#news">
+            </Link>
+            <Link to='/news'>
               {" "}
               <li
                 onClick={() => setNav(false)}
@@ -87,8 +87,8 @@ const Navbar = () => {
               >
                 News
               </li>
-            </a>
-            <a href="#contact">
+            </Link>
+            <Link to='/contact'>
               {" "}
               <li
                 onClick={() => setNav(false)}
@@ -96,8 +96,8 @@ const Navbar = () => {
               >
                 Contact{" "}
               </li>
-            </a>
-            <a href="#music">
+            </Link>
+            <Link to='/music'>
               {" "}
               <li
                 onClick={() => setNav(false)}
@@ -105,7 +105,7 @@ const Navbar = () => {
               >
                 Music
               </li>
-            </a>
+            </Link>
           </ul>
         </div>
       </div>

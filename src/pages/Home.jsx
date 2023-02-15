@@ -15,15 +15,15 @@ const Home = () => {
         />
         <div className="w-full h-screen absolute top-0 left-0 bg-black/30">
           <div className="h-full w-full flex flex-col justify-center items-center">
-            <h1 className="font-shalimar font-bold text-9xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
+            <h1 className="font-shalimar font-bold text-8xl lg:text-[10rem] sm:text-9xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] ">
               Halcyon Kleos
             </h1>
-            <div className="w-full flex justify-end pr-24 -mt-4">
-              <h2 className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-semibold ">
+            <div className="w-full flex justify-end  text-xs sm:text-base -mt-4 md:max-w-[500px] sm:max-w-[500px] max-w-[350px]">
+              <h2 className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-semibold flex  justify-end ">
                 Dj/Producer of Organ House Music
               </h2>
             </div>
-            <div className="flex gap-16 mt-8">
+            <div className="flex gap-6 mt-8 sm:gap-16 sm:max-w-[600px]">
               <a
                 href="https://www.facebook.com/halcyonkleos1/"
                 target="_blank"

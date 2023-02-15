@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
     <Navbar />
-    <div id="contact" className="w-[75%]  m-auto md:pl-20 p-4 py-16">
+    <div id="contact" className="w-[75%] lg:max-w-[800px]  m-auto md:pl-20 p-4 py-16">
       <h1 className="pt-4 pb-8 text-4xl font-bold text-center text-gray-100">
         Booking Inquiries
       </h1>
