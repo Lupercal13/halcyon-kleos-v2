@@ -13,41 +13,41 @@ const Footer = () => {
   return (
     <div className="text-gray-400 w-full h-auto px-4 py-10">
       <div className="border-t border-gray-500 pt-2">
-        <div className="flex justify-center gap-8 lg:gap-32">
+        <div className="flex justify-center gap-8 lg:gap-12">
           <a href="https://www.facebook.com/halcyonkleos1/">
             <BsFacebook
-              size={20}
-              className="hover:scale-105 hover:text-gray-100"
+              
+              className="facebookIcon hover:scale-105 hover:text-gray-100"
             />
           </a>
           <a href="https://www.instagram.com/halcyon_kleos/">
             <BsInstagram
-              size={20}
-              className="hover:scale-105 hover:text-gray-100"
+              
+              className="instagramIcon hover:scale-105 hover:text-gray-100"
             />
           </a>
           <a href="https://www.youtube.com/channel/UC1aC8N6gGrAtNrvrBE4dAsw?">
             <BsYoutube
-              size={20}
-              className="hover:scale-105 hover:text-gray-100"
+              
+              className="youtubeIcon hover:scale-105 hover:text-gray-100"
             />
           </a>
           <a href="https://soundcloud.com/halcyonkleos">
             <FaSoundcloud
-              size={20}
-              className="hover:scale-105 hover:text-gray-100"
+              
+              className="soundcloudIcon hover:scale-105 hover:text-gray-100"
             />
           </a>
           <a href="https://twitter.com/HalcyonKleos">
             <FaTwitterSquare
-              size={20}
-              className="hover:scale-105 hover:text-gray-100"
+              
+              className="twitterIcon hover:scale-105 hover:text-gray-100"
             />
           </a>
           <a href="https://www.mixcloud.com/halcyon_kleos/">
             <FaMixcloud
-              size={20}
-              className="hover:scale-105 hover:text-gray-100"
+              
+              className="mixcloudIcon hover:scale-105 hover:text-gray-100"
             />
           </a>
         </div>

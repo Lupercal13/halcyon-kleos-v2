@@ -10,7 +10,7 @@ const Music = () => {
 
       <div className="h-full w-full flex flex-col justify-center items-center pt-[7rem]">
         <h1 className="text-3xl font-bold mb-8 w-[90%] text-center border-b-2 border-orange-400/60 pb-4 tracking-wider"></h1>
-        <div className="w-[75%] sm:w-[50%] h-[300px] flex flex-col gap-4 justify-center items-center  bg-gray-200/30 rounded-lg ">
+        <div className="w-[75%] sm:w-[50%] h-[300px] flex flex-col gap-4 justify-center items-center  bg-gray-200/30 rounded-lg shadow-lg shadow-orange-600/60">
           <h1 className="text-center text-3xl lg:text-4xl xl:text-5xl">New Releases and Exclusive Tracks</h1>
           <h2 className="text-xl lg:text-3xl">
             available <span className="font-semibold">only</span> at{" "}
